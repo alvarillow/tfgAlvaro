@@ -32,3 +32,4 @@
             $resultado = mysqli_query($conexion, $consulta);
             return $resultado;
         }
+        ?>
