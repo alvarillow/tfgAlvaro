@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mostrar datos</title>
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="http://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
@@ -32,12 +32,15 @@
 
     <table border="1" class="table table-dark">
         <tr>
-            <th>idvideojuego</th>
-            <th>Titulo</th>
-            <th>Compañia</th>
-            <th>Publicacion</th>
+            <th>idpalas</th>
+            <th>Marca</th>
+            <th>Nombre</th>
             <th>Descripcion</th>
+            <th>Stock</th>
+            <th>Precio</th>
             <th>Imagen</th>
+         
+
            
            
             <td> <a href="insertarP.php"><button>insertar</button></a> </td>
@@ -65,7 +68,8 @@
             <td><?php echo $mostrar['Precio']  ?></td>
             <td><div class="div1"> <?php echo $mostrar['Stock']  ?></div></td>
             <td><img src="<?php echo $mostrar['Imagen']  ?>" width="120"></td>
-           
+       
+
             <td> <button ><a href="modificarP.php?IdPalas= <?php  echo $mostrar['idPalas'];?>" value="modificar" name="modificar">modificar</button></td>
             <td> <button ><a href="eliminarP.php?IdPalas= <?php  echo $mostrar['idPalas'];?>" value="eliminar" name="eliminar" onclick="return ConfirmarEliminar()">eliminar</button></td>
 

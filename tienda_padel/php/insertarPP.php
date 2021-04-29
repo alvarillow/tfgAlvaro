@@ -1,8 +1,4 @@
-<?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-?>
+
 <?php
 require "BD/DAOpalas.php";
 require "BD/conectorBD.php";
@@ -23,7 +19,8 @@ move_uploaded_file($imagenA,$rutaImg);
 
 
 
-$consulta =insertarpalas($conexion, $Marca, $Nombre, $Decripcion, $Stock, $Precio, $rutaImg);
+
+$consulta = insertarpalas($conexion, $Idpalas, $Marca, $Nombre, $Decripcion, $Stock, $Precio, $rutaImg);
    header('Location: adminpalas.php');
   ?>
 

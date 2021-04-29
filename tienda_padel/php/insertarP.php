@@ -38,12 +38,13 @@
         <input type="number" class="" name="Precio"><br>
         <label>Imagen</label><br>
         <input type="file" class="" name="Imagen"><br>
+
        
         
               
       
     <input type="submit" value="Añadir" name="btnregistrar">
-            <input type="hidden" name="idVideojuego" value="<?php echo $IdVideojuego?>">
+            <input type="hidden" name="idPalas" value="<?php echo $Idpalas?>">
     </form>
   </div>
     <footer> 
